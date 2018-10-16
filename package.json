@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/181185/ns-node/issues"
   },
-  "homepage": "https://github.com/181185/ns-node#readme"
+  "homepage": "https://github.com/181185/ns-node#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
 }
