@@ -1,8 +1,9 @@
 const express = require('express');
-const TvShow = require('./TvShow');
+// const TvShow = require('./TvShow');
+const TvShowService = require('./TvShowService');
 
 
-const tvShows = [new TvShow(1, 'Mr.Robot', 'Drama'), new TvShow(2, 'Black Mirror', 'Drama')];
+const tvShows = TvShowService.getAll();
 
 const tvShowRouter = express.Router();
 
@@ -10,5 +11,6 @@ const tvShowRouter = express.Router();
 tvShowRouter.get('/', (req, res) => {
   res.json(tvShows);
 });
+
 
 module.exports = tvShowRouter;
